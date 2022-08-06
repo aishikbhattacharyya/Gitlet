@@ -1,0 +1,15 @@
+> init
+<<<
++ d d.txt
++ a a.txt
+> add d
+<<<
+> add a
+<<<
+> commit "first commit"
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
+= d d.txt
+= a a.txt

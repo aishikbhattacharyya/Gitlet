@@ -1,0 +1,16 @@
+> init
+<<<
+> branch branchA
+<<<
++ wug wug.txt
++ notwug notwug.txt
+> add wug
+<<<
+> add notwug
+<<<
+> commit save
+<<<
+> checkout branchA
+<<<
+* wug
+* notwug

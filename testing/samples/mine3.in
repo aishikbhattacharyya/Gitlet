@@ -1,0 +1,18 @@
+D DATE1 "Date: \w\w\w \w\w\w \d+ \d\d:\d\d:\d\d \d\d\d\d"
+D COMMIT_LOG "(===[ ]*\ncommit [a-f0-9]+[ ]*\n(?:Merge:\s+[0-9a-f]{7}\s+[0-9a-f]{7}[ ]*\n)?${DATE1}) [-+](\d\d\d\d[ ]*\n(?:.|\n)*?(?=\Z|\n===))"
+> init
+<<<
+> branch branchA
+<<<
++ nota nota.txt
+> add nota
+<<<
+> log
+${COMMIT_LOG}
+<<<*
+> commit now added
+<<<
+> log
+${COMMIT_LOG}
+${COMMIT_LOG}
+<<<*
